@@ -2,7 +2,7 @@
 
 int currentAssignments = 5;
 
-int[] sophiaAssignmentScores = new int[] { 90, 86, 90, 87, 98, 100 };
+int[] sophiaAssignmentScores = new int[] { 90, 86, 87, 98, 100 };
 int[] anderwiseAssignmentScores = new int[] { 92, 89, 81, 96, 90};
 int[] emmaAssignmentScores = new int[] { 90, 85, 87, 98, 68 };
 int[] loganAssignmentScores = new int[] { 90, 95, 87, 88, 96 };
