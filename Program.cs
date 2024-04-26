@@ -1,51 +1,51 @@
 ﻿using System;
 
-// initialize variables - graded assignments 
 int currentAssignments = 5;
 
-int sophia1 = 90;
-int sophia2 = 86;
-int sophia3 = 87;
-int sophia4 = 98;
-int sophia5 = 100;
+int sophiaAssignment1 = 90;
+int sophiaAssignment2 = 86;
+int sophiaAssignment3 = 87;
+int sophiaAssignment4 = 98;
+int sophiaAssignment5 = 100;
 
-int andrew1 = 92;
-int andrew2 = 89;
-int andrew3 = 81;
-int andrew4 = 96;
-int andrew5 = 90;
+int andrewAssignment1 = 92;
+int andrewAssignment2 = 89;
+int andrewAssignment3 = 81;
+int andrewAssignment4 = 96;
+int andrewAssignment5 = 90;
 
-int emma1 = 90;
-int emma2 = 85;
-int emma3 = 87;
-int emma4 = 98;
-int emma5 = 68;
+int emmaAssignment1 = 90;
+int emmaAssignment2 = 85;
+int emmaAssignment3 = 87;
+int emmaAssignment4 = 98;
+int emmaAssignment5 = 68;
 
-int logan1 = 90;
-int logan2 = 95;
-int logan3 = 87;
-int logan4 = 88;
-int logan5 = 96;
+int loganAssignment1 = 90;
+int loganAssignment2 = 95;
+int loganAssignment3 = 87;
+int loganAssignment4 = 88;
+int loganAssignment5 = 96;
 
-int sophiaSum = 0;
-int andrewSum = 0;
-int emmaSum = 0;
-int loganSum = 0;
+int sophiaAssignmentSum = 0;
+int andrewAssignmentSum = 0;
+int emmaAssignmentSum = 0;
+int loganAssignmentSum = 0;
 
 decimal sophiaScore;
 decimal andrewScore;
 decimal emmaScore;
 decimal loganScore;
 
-sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
-andrewSum = andrew1 + andrew2 + andrew3 + andrew4 + andrew5;
-emmaSum = emma1 + emma2 + emma3 + emma4 + emma5;
-loganSum = logan1 + logan2 + logan3 + logan4 + logan5;
+sophiaAssignmentSum = sophiaAssignment1 + sophiaAssignment2 + sophiaAssignment3 + sophiaAssignment4 + sophiaAssignment5;
+andrewAssignmentSum = andrewAssignment1 + andrewAssignment2 + andrewAssignment3 + andrewAssignment4 + andrewAssignment5;
+emmaAssignmentSum = emmaAssignment1 + emmaAssignment2 + emmaAssignment3 + emmaAssignment4 + emmaAssignment5;
+loganAssignmentSum = loganAssignment1 + loganAssignment2 + loganAssignment3 + loganAssignment4 + loganAssignment5;
 
-sophiaScore = (decimal)sophiaSum / currentAssignments;
-andrewScore = (decimal)andrewSum / currentAssignments;
-emmaScore = (decimal)emmaSum / currentAssignments;
-loganScore = (decimal)loganSum / currentAssignments;
+
+sophiaScore = (decimal)sophiaAssignmentSum / currentAssignments;
+andrewScore = (decimal)andrewAssignmentSum / currentAssignments;
+emmaScore = (decimal)emmaAssignmentSum / currentAssignments;
+loganScore = (decimal)loganAssignmentSum / currentAssignments;
 
 Console.WriteLine("Student\t\tGrade\n");
 Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA-");
