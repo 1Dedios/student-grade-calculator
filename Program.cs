@@ -16,21 +16,23 @@ decimal andrewTotalScore;
 decimal emmaTotalScore;
 decimal loganTotalScore;
 
-foreach (int score in sophiaAssignmentScores) {
-
-    // integrate extra credit scores for each student
+foreach (int score in sophiaAssignmentScores) 
+{
     sophiaAssignmentSum += score;
 }
 
-foreach (int score in anderwiseAssignmentScores) {
+foreach (int score in anderwiseAssignmentScores) 
+{
     andrewAssignmentSum += score;
 }
 
-foreach (int score in emmaAssignmentScores) {
+foreach (int score in emmaAssignmentScores) 
+{
     emmaAssignmentSum += score;
 }
 
-foreach (int score in loganAssignmentScores) {
+foreach (int score in loganAssignmentScores) 
+{
     loganAssignmentSum += score;
 }
 
@@ -39,17 +41,11 @@ andrewTotalScore = (decimal)andrewAssignmentSum / currentAssignments;
 emmaTotalScore = (decimal)emmaAssignmentSum / currentAssignments;
 loganTotalScore = (decimal)loganAssignmentSum / currentAssignments;
 
-/*
-- put the scores into an array and process in a for each with the if else letter grade statements - O(n)
-- then process the above array into a for each as well that assigns the scores to each student letter grade variable - O(n)
-*/
-
 decimal[] studentScores = {sophiaTotalScore, andrewTotalScore, emmaTotalScore, loganTotalScore};
 string[] studentLetterGrades = new string[studentScores.Length*2];
 
 for (int i = 0; i < studentScores.Length; i++) 
 {
-    // if else statements to generate letter grades
     if (studentScores[i] >= 97) {
         // A+
         studentLetterGrades[i] = "A+";
