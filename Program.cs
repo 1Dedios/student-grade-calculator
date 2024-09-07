@@ -2,12 +2,12 @@
 
 int currentAssignments = 5;
 
-int[] sophiaAssignmentScores = new int[] { 90, 86, 87, 98, 100, 94, 90};
-int[] andrewAssignmentScores = new int[] { 92, 89, 81, 96, 90, 89};
-int[] emmaAssignmentScores = new int[] { 90, 85, 87, 98, 68, 89, 89, 89 };
-int[] loganAssignmentScores = new int[] { 90, 95, 87, 88, 96, 96};
+int[] sophiaAssignmentScores = [90, 86, 87, 98, 100, 94, 90];
+int[] andrewAssignmentScores = [92, 89, 81, 96, 90, 89];
+int[] emmaAssignmentScores = [90, 85, 87, 98, 68, 89, 89, 89];
+int[] loganAssignmentScores = [90, 95, 87, 88, 96, 96];
 
-double sophiaAssignmentSum = 0;
+int sophiaAssignmentSum = 0;
 int andrewAssignmentSum = 0;
 int emmaAssignmentSum = 0;
 int loganAssignmentSum = 0;
