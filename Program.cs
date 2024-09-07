@@ -46,55 +46,45 @@ string[] studentLetterGrades = new string[studentScores.Length*2];
 
 for (int i = 0; i < studentScores.Length; i++) 
 {
-    if (studentScores[i] >= 97) {
-        // A+
+    decimal score = studentScores[i];
+
+    if (score >= 97) {
         studentLetterGrades[i] = "A+";
         
-    } else if (studentScores[i] >= 93) {
-        // A
+    } else if (score >= 93) {
         studentLetterGrades[i] = "A";
-    } else if (studentScores[i] >= 90) {
-        // A-
+
+    } else if (score >= 90) {
         studentLetterGrades[i] = "A-";
 
-    } else if (studentScores[i] >= 87) {
-        //B+
+    } else if (score >= 87) {
         studentLetterGrades[i] = "B+";
 
-    } else if (studentScores[i] >= 83) {
-        // B
+    } else if (score >= 83) {
         studentLetterGrades[i] = "B";
 
-    } else if (studentScores[i] >= 80) {
-        //B-
+    } else if (score >= 80) {
         studentLetterGrades[i] = "B-";  
         
-    } else if (studentScores[i] >= 77) {
-        //C+
+    } else if (score >= 77) {
         studentLetterGrades[i] = "C+";
 
-    } else if (studentScores[i] >= 73) {
-        //C
+    } else if (score >= 73) {
         studentLetterGrades[i] = "C";
 
-    } else if (studentScores[i] >= 70) {
-        //C-
+    } else if (score >= 70) {
         studentLetterGrades[i] = "C-"; 
 
-    } else if (studentScores[i] >= 67) {
-        //D+
+    } else if (score >= 67) {
         studentLetterGrades[i] = "D+";
 
-    } else if (studentScores[i] >= 63) {
-        // D
+    } else if (score >= 63) {
         studentLetterGrades[i] = "D";
 
-    } else if (studentScores[i] >= 60) {
-        //D-
+    } else if (score >= 60) {
         studentLetterGrades[i] = "D+";
 
     } else
-        // F 
         studentLetterGrades[i] = "F";
 }
 
