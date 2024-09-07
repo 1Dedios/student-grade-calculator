@@ -2,38 +2,83 @@
 
 int currentAssignments = 5;
 
-int[] sophiaAssignmentScores = new int[] { 90, 86, 87, 98, 100 };
-int[] anderwiseAssignmentScores = new int[] { 92, 89, 81, 96, 90};
-int[] emmaAssignmentScores = new int[] { 90, 85, 87, 98, 68 };
-int[] loganAssignmentScores = new int[] { 90, 95, 87, 88, 96 };
+int[] sophiaAssignmentScores = new int[] { 90, 86, 87, 98, 100, 94, 90};
+int[] andrewAssignmentScores = new int[] { 92, 89, 81, 96, 90, 89};
+int[] emmaAssignmentScores = new int[] { 90, 85, 87, 98, 68, 89, 89, 89 };
+int[] loganAssignmentScores = new int[] { 90, 95, 87, 88, 96, 96};
 
-int sophiaAssignmentSum = 0;
+double sophiaAssignmentSum = 0;
 int andrewAssignmentSum = 0;
 int emmaAssignmentSum = 0;
 int loganAssignmentSum = 0;
+
 decimal sophiaTotalScore;
 decimal andrewTotalScore;
 decimal emmaTotalScore;
 decimal loganTotalScore;
 
+int extraAssignmentWeight = 10;
+int gradedAssignments = 0;
+
 foreach (int score in sophiaAssignmentScores) 
 {
-    sophiaAssignmentSum += score;
+
+    if (gradedAssignments >= currentAssignments)
+    {
+        sophiaAssignmentSum += score / extraAssignmentWeight;
+    }
+    else
+    {
+        sophiaAssignmentSum += score;
+    }
+    gradedAssignments++;
+    
 }
 
-foreach (int score in anderwiseAssignmentScores) 
+gradedAssignments = 0;
+
+foreach (int score in andrewAssignmentScores) 
 {
-    andrewAssignmentSum += score;
+
+    if (gradedAssignments >= currentAssignments)
+    {
+        andrewAssignmentSum += score / extraAssignmentWeight;
+    }
+    else 
+    {
+        andrewAssignmentSum += score;
+    }
+    gradedAssignments++;
 }
+
+gradedAssignments = 0;
 
 foreach (int score in emmaAssignmentScores) 
 {
-    emmaAssignmentSum += score;
+    if (gradedAssignments >= currentAssignments)
+    {
+        emmaAssignmentSum += score / extraAssignmentWeight;
+    }
+    else
+    {
+        emmaAssignmentSum += score;
+    }
+    gradedAssignments++;
 }
+
+gradedAssignments = 0;
 
 foreach (int score in loganAssignmentScores) 
 {
-    loganAssignmentSum += score;
+    if (gradedAssignments >= currentAssignments)
+    {
+        loganAssignmentSum += score / extraAssignmentWeight;
+    }
+    else 
+    {
+        loganAssignmentSum += score;
+    }
+    gradedAssignments++;
 }
 
 sophiaTotalScore = (decimal)sophiaAssignmentSum / currentAssignments;
